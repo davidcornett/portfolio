@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply scroll-smooth;
+}
+
+#__next {
+  @apply h-full flex flex-col justify-between;
+}
+
+.theme {
+  @apply bg-theme-color text-theme-text dark:bg-theme-color-dark dark:text-theme-text-dark custom-transition;
+}
+
+header {
+  @apply border-accent-color border-b theme;
+}
+
+.outlined {
+  @apply outline outline-1;
+}
+
+.custom-transition {
+  @apply transition duration-[85ms] ease-in-out;
+}
+
+.icons {
+  @apply rounded-sm p-[6px] hover:text-accent-color outlined hover:scale-[1.05] active:scale-[0.95] custom-transition;
+}
+
+.highlighted {
+  @apply bg-theme-color-lighter dark:bg-theme-color-dark-lighter;
+}
+
+.project-buttons {
+  @apply flex items-center justify-center outlined px-3 rounded-sm hover:text-accent-color;
+}
+
+.article-body {
+  @apply flex flex-col items-start w-full max-w-[800px] mx-auto p-4 custom-transition;
+}
+
+.article-title {
+  @apply text-3xl font-medium mb-2;
+}
+
+.article-date {
+  @apply text-accent-color font-medium;
+}
+
+.article-disclaimer {
+  @apply outlined rounded-sm p-3;
+}
+
+.article-disclaimer-text {
+  @apply text-4xl font-medium mb-2 text-accent-color;
+}
+
+.article-text {
+  @apply leading-7 mb-8;
+}
+
+.article-figure {
+  @apply outlined p-2 rounded-sm my-8 mx-auto;
+}
+
+.article-figure-caption {
+  @apply mt-2 text-center;
+}
+
+.article-section-title {
+  @apply text-2xl sm:text-3xl font-semibold mt-20 mb-3;
+}
+
+.article-links-container {
+  @apply flex flex-row gap-2 justify-center mx-auto font-medium my-6;
+}
+
+.article-links {
+  @apply rounded-sm font-medium theme p-2 text-sm flex items-center hover:text-accent-color outlined text-center hover:scale-[1.05] active:scale-[0.95] custom-transition;
+}
+
+.article-iframe {
+  @apply absolute top-0 left-0 w-full h-full rounded-sm;
+}
+
+.article-iframe-container {
+  @apply relative w-full pb-[56.25%] h-0;
+}
+
+.article-hrefs {
+  @apply font-medium text-accent-color;
+}
+
+.code-snippets-bigger-text {
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.6rem] sm:text-sm outlined p-2;
+}
+
+.code-snippets-smaller-text {
+  @apply whitespace-pre-wrap break-words rounded-sm text-[0.5rem] sm:text-sm outlined p-2;
+}
+
+.code-snippet-container {
+  @apply leading-7 my-2 px-2 w-11/12 mx-auto;
+}
+
+.code-snippet-sub-title {
+  @apply text-xl sm:text-2xl font-medium my-3;
+}
+
+.code-snippet-pre-code {
+  @apply p-2 rounded-sm ;
+}
+
+.code-snippet code {
+  padding-inline: 0.3rem;
+  padding-block: 0.1rem;
+  border-radius: 0.15rem;
+  margin-inline: 0.25rem;
+  font-size: 0.9rem;
+  @apply outlined;
+}
+
+.slide-in {
+  @apply absolute top-0 left-0 w-full h-screen bg-theme-color dark:bg-theme-color-dark origin-right z-[2000];
+}
+
+.slide-out {
+  @apply absolute top-0 left-0 w-full h-screen bg-theme-color dark:bg-theme-color-dark origin-left z-[2000];
+}

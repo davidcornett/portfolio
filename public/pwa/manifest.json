@@ -1,0 +1,15 @@
+{
+  "name": "David Cornett | Portfolio",
+  "background_color": "#E0E4E5",
+  "theme_color": "#E0E4E5",
+  //"start_url": "https://jdichh.vercel.app/",
+  "display": "standalone",
+  "icons": [
+    {
+        "src": "./maskable_icon.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+    }
+  ]
+}
