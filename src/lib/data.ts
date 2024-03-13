@@ -1,4 +1,4 @@
-import solarsystem from "../../public/project/solar_system.JPG";
+//import solarsystem from "../../public/project/solar_system.JPG";
 import roof_rack from "../../public/project/roof_rack.png";
 import edtraverse from "../../public/project/edtraverse_map.png";
 import shell from "../../public/project/shell.png";
