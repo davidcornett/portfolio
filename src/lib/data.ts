@@ -1,33 +1,13 @@
-import asteroids from "../../public/project/asteroids.png";
 import solarsystem from "../../public/project/solar_system.jpg";
-import pwgen from "../../public/project/pwgen.png";
-import showroom from "../../public/project/showroom.png";
-import ssu from "../../public/project/ssu.png";
-import synthwave from "../../public/project/synthwave.png";
-import vespa from "../../public/project/vespa.png";
-import vintora from "../../public/project/vintora.png";
 import roof_rack from "../../public/project/roof_rack.png";
 import edtraverse from "../../public/project/edtraverse_map.png";
 import shell from "../../public/project/shell.png";
 import ER from "../../public/project/ER.png";
 
-import bootstrapImg from "../../public/tools/bootstrap.svg";
-import firebaseImg from "../../public/tools/firebase.svg";
-import gsapImg from "../../public/tools/gsap.svg";
-import htmlImg from "../../public/tools/html.svg";
 import jsImg from "../../public/tools/js.svg";
 import nextImg from "../../public/tools/next.svg";
-import openaiImg from "../../public/tools/openai.svg";
-import pcImg from "../../public/tools/pc.svg";
 import pcRequiredImg from "../../public/tools/pcrequired.svg";
-import r3fImg from "../../public/tools/r3f.svg";
 import reactImg from "../../public/tools/react.svg";
-import replicateImg from "../../public/tools/replicate.svg";
-import scssImg from "../../public/tools/scss.svg";
-import shadcnImg from "../../public/tools/shadcn.svg";
-import tailwindImg from "../../public/tools/tailwind.svg";
-import threeImg from "../../public/tools/three.svg";
-import vueImg from "../../public/tools/vue.svg";
 import graphQlImg from "../../public/tools/graphql.svg";
 import mySqlImg from "../../public/tools/mysql.svg";
 import pythonImg from "../../public/tools/python.svg";
@@ -45,6 +25,10 @@ export const links = [
   {
     name: "Works",
     hash: "#works",
+  },
+  {
+    name: "Technologies",
+    hash: "#tools",
   }
 ];
 
@@ -115,11 +99,13 @@ export const tools = [
     imageUrl: openGLImg,
     alt: "OpenGL logo",
   },
+  /*
   {
     name: "Java",
     imageUrl: javaImg,
     alt: "Java logo",
   }
+  */
 ];
 
 export const projects = [
