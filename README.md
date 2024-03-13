@@ -10,7 +10,7 @@ Welcome! This repo shows off some of my projects, created with a wide range of t
 * **Description**: Graphical simulation with close-to-accurate scale of solar system, where the player flies a spaceship by all planets at extremely high speeds. There are some cool effects like light attenuation as you travel away from the sun, making planets increasingly dimmer. Stars also blue-shift and red-shift, depending on flight velocity and direction.
 * **Technologies**: C++, OpenGL
 * **Repository**: [GitHub link](https://github.com/davidcornett/FTL_Solar_System_Tour)
-* **Screenshots**: ![Approaching Neptune](public/project/solar_system.JPG)
+* **Screenshots**: ![Approaching Neptune](public/project/solar_system.png)
 
 ### EdTraverse University Analytics
 
