@@ -121,7 +121,7 @@ export const projects = [
     "Graphical simulation with close-to-accurate scale of solar system, where the player flies a spaceship by all planets at extremely high speeds. There are some cool effects like light attenuation as you travel away from the sun, making planets increasingly dimmer. Stars also blue-shift and red-shift, depending on flight velocity and direction. ",
     tools: ["C++", "OpenGL", "PC Required"],
     toolIcons: [cPlusPlusImg, openGLImg, pcRequiredImg],
-    imageUrl: solarsystem,
+    imageUrl: shell,
     videoLink: "https://youtu.be/SSwFiZqa-ms",
     githubLink: "https://github.com/davidcornett/FTL_Solar_System_Tour",
   },
