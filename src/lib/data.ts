@@ -17,6 +17,7 @@ import cPlusPlusImg from "../../public/tools/c++.svg";
 import openGLImg from "../../public/tools/opengl.svg";
 import javaImg from "../../public/tools/java.svg";
 import muiImg from "../../public/tools/mui.svg";
+import tailwindImg from "../../public/tools/tailwind.svg";
 import remixImg from "../../public/tools/remix.svg";
 import shopifyImg from "../../public/tools/shopify.svg";
 import teamworkImg from "../../public/tools/teamwork.svg";
@@ -58,6 +59,11 @@ export const tools = [
     name: "Shopify API",
     imageUrl: shopifyImg,
     alt: "Shopify logo",
+  },
+  {
+    name: "Tailwind",
+    imageUrl: tailwindImg,
+    alt: "Tailwind logo",
   },
   {
     name: "Material-UI",
@@ -138,9 +144,9 @@ export const projects = [
     name: "Adventure Van Roof Rack - Web Configurator",
     description:
       "I was part of a continuous integration team of 4 developers that built a Shopify integrated custom webapp for Orion Van Gear. We streamlined the roof rack design process for their engineers and customers by creating a drag and drop product configurator. I developed features including automatic grid resizing based on rack size, product querying and filtering, exclusion zones due to roof obstacles, and user-specified pre-installed roof appliances. Due to an NDA, I can't share the source code.",
-    tools: ["React.js", "Remix", "GraphQL", "Material UI", "Shopify API", "Team-based"],
+    tools: ["React.js", "Remix", "GraphQL", "Tailwind", "Material UI", "Shopify API", "Team-based"],
     imageUrl: roof_rack,
-    toolIcons: [reactImg,remixImg, graphQlImg, muiImg, shopifyImg, teamworkImg],
+    toolIcons: [reactImg,remixImg, graphQlImg, tailwindImg, muiImg, shopifyImg, teamworkImg],
     pdf: "/project/roof_rack.pdf",
   },
   {
