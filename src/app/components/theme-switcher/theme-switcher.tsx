@@ -10,7 +10,7 @@ type Theme = "light" | "dark";
 export default function ThemeSwitcher() {
 
   const { theme, setTheme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState<Theme>("light");
+  const [currentTheme, setCurrentTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     setCurrentTheme(theme as Theme);
