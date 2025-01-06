@@ -2,6 +2,7 @@ import React from "react";
 
 export default function SectionDivider() {
   return (
-    <div className="bg-accent-color h-24 w-1 block mt-16" />
+    // Remove the fixed height; let items-stretch handle it
+    <div className="bg-accent-color w-1 mx-4" />
   );
 }

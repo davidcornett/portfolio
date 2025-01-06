@@ -1,7 +1,6 @@
 import React from "react";
 import { DM_Serif_Display } from "next/font/google";
 import HeroButtons from "./hero-buttons";
-import SectionDivider from "../section-divider/section-divider";
 
 const dmSerifDisplay = DM_Serif_Display({ subsets: ["latin"], weight: "400", fallback: ["system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"] });
 
@@ -22,7 +21,6 @@ export default function Hero() {
           <HeroButtons />
         </div>
       </div>
-      <SectionDivider />
     </section>
   );
 }
