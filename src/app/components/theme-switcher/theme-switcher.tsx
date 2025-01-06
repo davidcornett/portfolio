@@ -13,7 +13,11 @@ export default function ThemeSwitcher() {
   const [currentTheme, setCurrentTheme] = useState<Theme>("dark");
 
   useEffect(() => {
-    setCurrentTheme(theme as Theme);
+    // Ensure the actual theme is set to "dark" by default
+    if (!theme) {
+      setTheme("dark");
+    }
+    setCurrentTheme(theme as Theme || "dark");
   }, [theme]);
 
   const switchTheme = () => {
