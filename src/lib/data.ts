@@ -1,4 +1,4 @@
-import bordercanvas from "../../public/project/border_canvas.jpg";
+import bordercanvas from "../../public/project/border_canvas.png";
 import solarsystem from "../../public/project/solar_system.png";
 import roof_rack from "../../public/project/roof_rack.png";
 import edtraverse from "../../public/project/edtraverse_map.png";
