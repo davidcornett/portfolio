@@ -1,3 +1,4 @@
+import bordercanvas from "../../public/project/border_canvas2.JPG";
 import solarsystem from "../../public/project/solar_system.png";
 import roof_rack from "../../public/project/roof_rack.png";
 import edtraverse from "../../public/project/edtraverse_map.png";
@@ -10,6 +11,7 @@ import pcRequiredImg from "../../public/tools/pcrequired.svg";
 import reactImg from "../../public/tools/react.svg";
 import graphQlImg from "../../public/tools/graphql.svg";
 import mySqlImg from "../../public/tools/mysql.svg";
+import postgresImg from "../../public/tools/postgres.svg";
 import pythonImg from "../../public/tools/python.svg";
 import flaskImg from "../../public/tools/flask.svg";
 import cImg from "../../public/tools/c.svg";
@@ -21,6 +23,7 @@ import tailwindImg from "../../public/tools/tailwind.svg";
 import remixImg from "../../public/tools/remix.svg";
 import shopifyImg from "../../public/tools/shopify.svg";
 import teamworkImg from "../../public/tools/teamwork.svg";
+import { getEnabledCategories } from "trace_events";
 
 export const links = [
   {
@@ -116,6 +119,31 @@ export const tools = [
 
 export const projects = [
   {
+    name: "Border Canvas country-builder",
+    description: "Map-based game where the player creates a custom new country comprised of US counties. Using hosted DB queries and the NPS API, Border Canvas shows the new country's population, demographics, world population ranking, GDP, per-capita income, natural resources, and national parks. There is also a challenge mode where users compete for the most populous or wealthiest country in different size categories. Error handling ensures all selected US counties are contiguous and meet max size requirements.",
+    tools: [
+      "React.js",
+      "Next.js",
+      "Postgres",
+      "Python", 
+      "Flask",
+      "Tailwind",
+    ],
+    toolIcons: [reactImg, nextImg, postgresImg, pythonImg, flaskImg, tailwindImg],
+    imageUrl: bordercanvas,
+    liveLink: "https://bordercanvas.com/",
+    githubLink: "https://github.com/davidcornett/map_game",
+  },
+  {
+    name: "Adventure Van Roof Rack - Web Configurator",
+    description:
+      "I was part of a continuous integration team of 4 developers that built a Shopify integrated custom webapp for Orion Van Gear. We streamlined the roof rack design process for their engineers and customers by creating a drag and drop product configurator. I developed features including automatic grid resizing based on rack size, product querying and filtering, exclusion zones due to roof obstacles, and user-specified pre-installed roof appliances. Due to an NDA, I can't share the source code.",
+    tools: ["React.js", "Remix", "GraphQL", "Tailwind", "Material UI", "Shopify API", "Team-based"],
+    imageUrl: roof_rack,
+    toolIcons: [reactImg,remixImg, graphQlImg, tailwindImg, muiImg, shopifyImg, teamworkImg],
+    pdf: "/project/roof_rack.pdf",
+  },
+  {
     name: "Solar System FTL Journey",
     description:
     "Graphical simulation with close-to-accurate scale of solar system, where the player flies a spaceship by all planets at extremely high speeds. There are some cool effects like light attenuation as you travel away from the sun, making planets increasingly dimmer. Stars also blue-shift and red-shift, depending on flight velocity and direction. ",
@@ -128,7 +156,7 @@ export const projects = [
   {
     name: "EdTraverse University Analytics",
     description:
-      "A webapp with a RESTful API backend created as a demo for a business venture I launched, allowing users to retrieve forecasted growth/decline of universities. The projections are based on an algorithm I designed to model revenue changes over 5 and 10 years to 3,000 colleges based on their demographics, selectivity, and the job growth prospects of their academic programs.",
+      "A webapp with a RESTful API backend created as a demo for a successful business venture I launched, allowing users to retrieve forecasted growth/decline of universities. The projections are based on an algorithm I designed to model revenue changes over 5 and 10 years to 3,000 colleges based on their demographics, selectivity, and the job growth prospects of their academic programs.",
     tools: [
       "React.js",
       "Next.js",
@@ -140,15 +168,7 @@ export const projects = [
     liveLink: "https://edtraverse.com/",
     githubLink: "https://github.com/davidcornett/watering_hole",
   },
-  {
-    name: "Adventure Van Roof Rack - Web Configurator",
-    description:
-      "I was part of a continuous integration team of 4 developers that built a Shopify integrated custom webapp for Orion Van Gear. We streamlined the roof rack design process for their engineers and customers by creating a drag and drop product configurator. I developed features including automatic grid resizing based on rack size, product querying and filtering, exclusion zones due to roof obstacles, and user-specified pre-installed roof appliances. Due to an NDA, I can't share the source code.",
-    tools: ["React.js", "Remix", "GraphQL", "Tailwind", "Material UI", "Shopify API", "Team-based"],
-    imageUrl: roof_rack,
-    toolIcons: [reactImg,remixImg, graphQlImg, tailwindImg, muiImg, shopifyImg, teamworkImg],
-    pdf: "/project/roof_rack.pdf",
-  },
+
   {
     name: "Unix Shell",
     description:
@@ -157,14 +177,5 @@ export const projects = [
     toolIcons: [cImg],
     imageUrl: shell,
     githubLink: "https://github.com/davidcornett/shell_program",
-  },
-  {
-    name: "Eric Roberts Movie Database",
-    description:
-      "A CRUD app (with a 90s feel) dedicated to the voluminous work of Eric Roberts. Users can create, read, update, and delete movie data. I created this along with another CS student at Oregon State to learn relational databases and have some fun. We designed the front-end to reach previously unheard-of levels of taste and subtlety...",
-    tools: ["Flask", "Python", "MySQL", "Team-based"],
-    imageUrl: ER,
-    toolIcons: [flaskImg, pythonImg, mySqlImg, teamworkImg],
-    githubLink: "https://github.com/davidcornett/ER-database",
   },
 ];
